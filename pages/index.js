@@ -1,6 +1,6 @@
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
-import ProjectList from '../components/projects/ProjectList'
+import Header from '../components/Header/header'
+import Footer from '../components/Footer/footer'
+import ProjectList from '../components/Projects/projectList'
 
 export default function Home() {
   return (
