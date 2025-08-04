@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Finance Tracker Dashboard',
     description: 'A personal expense tracking dashboard built using the Expensify API. It fetches, categorizes, and visualizes transactions in real time, helping users simplify how they manage and reflect on their spending.',
-    link: 'https://github.com/tdkayy/limit-order-book',
+    link: 'https://github.com/tdkayy/adesanya-banking',
     demo: 'comingsoon',
     tech: ['React', 'Typescript', 'Expensify API', 'Tailwind CSS', 'OAuth', 'REST'],
     relevance: 'I built this project to explore how APIs can power simple yet meaningful financial workflows. It also reflects my belief that personal finance tools should be accessible, low-friction, and visually intuitive, principles I see mirrored in Expensify’s mission.',
@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Limit Order Book Engine',
     description: 'A performant, real-time trading engine that simulates buy/sell order matching using FIFO logic. Designed for low-latency execution and high-frequency simulation.',
-    link: 'https://github.com/tdkayy/limit-order-book',
+    link: 'https://github.com/tdkayy/limit-order-book-engine',
     demo: 'comingsoon',
     tech: ['Rust', 'React', 'WebSockets', 'Redis', 'Property Testing', 'Flamegraph', 'REST API'],
     relevance: 'An ongoing project that taught me how to design scalable systems under performance constraints. I gained experience in stateful backend logic, concurrency, and real-time streaming — all of which translate to building fast, reliable financial tools at scale.',
