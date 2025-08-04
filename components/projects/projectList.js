@@ -10,6 +10,14 @@ const projects = [
     relevance: 'I built this project to explore how APIs can power simple yet meaningful financial workflows. It also reflects my belief that personal finance tools should be accessible, low-friction, and visually intuitive, principles I see mirrored in Expensify’s mission.',
   },
   {
+    title: 'MarkUp - AI Powered Rubric Generator',
+    description: 'A web app that uses OpenAI to generate marking rubrics based on user-defined criteria. Built to help educators structure consistent feedback quickly and flexibly.',
+    link: 'https://github.com/tdkayy/adesanya-banking',
+    demo: 'comingsoon',
+    tech: ['React', 'Typescript', 'OpenAI API', 'Node.js', 'MongoDB'],
+    relevance: 'Created to streamline the rubric-writing process for assessments. Focused on usability, automation, and exportability.',
+  },
+  {
     title: 'Limit Order Book Engine',
     description: 'A performant, real-time trading engine that simulates buy/sell order matching using FIFO logic. Designed for low-latency execution and high-frequency simulation.',
     link: 'https://github.com/tdkayy/limit-order-book-engine',
