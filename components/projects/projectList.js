@@ -1,5 +1,6 @@
 import ProjectCard from './projectCard'
 
+//list of projects
 const projects = [
   {
     title: 'Finance Tracker Dashboard',
@@ -27,7 +28,6 @@ const projects = [
   },  {
     title: 'Enlighten - IoT Light Therapy System',
     description: 'A smart lighting system built with embedded sensors and real-time automation logic, designed to reduce seasonal depression and improve sleep cycles through responsive light therapy.',
-    link:"https://github.com/tdkayy/enlighten-project",
     demo:"https://www.youtube.com/watch?v=0syyQ7u4Btc",
     tech: ['ESP32', 'C++', 'MQTT', 'VEML7700 Sensor', 'Adafruit', 'PubSubCLient', 'Embedded Systems'],
     relevance: 'Enlighten was my first true hardware-software integration project. I designed the system from scratch, wrote real-time logic to handle edge conditions (e.g. off-hours vs ambient light), and used MQTT to manage cross-system communication. It deepened my understanding of stateful embedded systems, physical UX, and fault-tolerant control loops, all key foundations for scalable backend logic.',
@@ -36,10 +36,12 @@ const projects = [
 
 export default function ProjectList() {
   return (
-    <div className="mt-10 grid grid-cols-1 gap-6">
-      {projects.map((proj, i) => (
-        <ProjectCard key={i} {...proj} />
-      ))}
-    </div>
-  )
+<div className="bg-gray-50 p-6 rounded-lg shadow-sm mt-10">
+  <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+  <div className="grid grid-cols-1 gap-6">
+    {projects.map((proj, i) => (
+      <ProjectCard key={i} {...proj} />
+    ))}
+  </div>
+</div>  )
 }

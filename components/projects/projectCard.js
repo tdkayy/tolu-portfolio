@@ -17,26 +17,26 @@ export default function ProjectCard({ title, description, link, demo, tech, rele
       <div className="flex gap-4 mt-4 items-center">
         {link && (
           <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-500 font-medium hover:text-blue-600 transition"
-          >
-            View Code →
-          </a>
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 bg-gray-100 rounded hover:bg-gray-200 text-sm transition"
+        >
+          View Code
+        </a>        
         )}
         {demo === "comingsoon" ? (
           <span className="text-gray-400 italic">Demo coming soon</span>
         ) : (
           demo && (
             <a
-              href={demo}
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-500 font-medium hover:text-blue-600 transition"
-            >
-              Watch Demo →
-            </a>
+            href={demo}
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 bg-blue-100 rounded hover:bg-blue-200 text-sm transition"
+          >
+            Watch Demo
+          </a>          
           )
         )}
       </div>
