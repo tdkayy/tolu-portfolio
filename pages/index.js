@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import profilePic from '../public/static/images/me.jpeg'
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
