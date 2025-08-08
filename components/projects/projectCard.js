@@ -8,31 +8,44 @@ export default function ProjectCard({ title, description, link, demo, tech, rele
 
       <p className="mt-2 opacity-90">{description}</p>
 
-      {/* tech chips are links now */}
+      {/*tech i used*/}
       <ul className="mt-3 flex gap-2 flex-wrap text-sm">
         {tech.map((t, i) => {
           const href = TECH_LINKS[t];
           const chip = (
-            <span className="px-2 py-1 rounded
-                             bg-blue-50 text-blue-700/90
-                             dark:[--tw-bg-opacity:0.12] dark:bg-blue-500/10 dark:text-blue-300
-                             hover:underline underline-offset-2">
+            <span
+              className="px-2 py-1 rounded
+                         bg-blue-50 text-blue-700/90
+                         dark:[--tw-bg-opacity:0.12] dark:bg-blue-500/10 dark:text-blue-300
+                         hover:underline underline-offset-2"
+              style={{ textDecoration: 'none' }} 
+            >
               {t}
             </span>
           );
           return (
             <li key={i}>
               {href ? (
-                <a href={href} target="_blank" rel="noreferrer" aria-label={`${t} docs`}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${t} docs`}
+                  style={{ textDecoration: 'none' }}
+                >
                   {chip}
                 </a>
-              ) : chip}
+              ) : (
+                chip
+              )}
             </li>
           );
         })}
       </ul>
 
-      {relevance && <p className="mt-2 text-sm italic opacity-80">{relevance}</p>}
+      {relevance && (
+        <p className="mt-2 text-sm italic opacity-80">{relevance}</p>
+      )}
 
       <div className="flex gap-4 mt-4 items-center flex-wrap">
         {link && (

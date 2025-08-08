@@ -8,9 +8,9 @@ export default function Projects() {
     <>
       <Header />
       <main className="max-w-5xl mx-auto px-4 mt-12">
-        <h1 className="text-3xl font-bold">Projects</h1>
+      <h1 className="text-3xl font-bold text-center">who are you!!</h1>
         <p className="mt-3 text-lg opacity-90">
-          An aspiring full-stack developer focused on building tools that are scalable, human-centred, and purpose-driven.
+        I would describe myself as a thinker focused on building tools that are scalable, human-centred, and purpose-driven. My long-term mission is to develop the infrastructure that empowers communities, starting here in London, and one day reaching my home country, Nigeria.
         </p>
 
         <div className="mt-10">

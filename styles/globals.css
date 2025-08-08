@@ -1,10 +1,8 @@
 @import "tailwindcss";
 :root {
-    /* site theme already sets these, adding card-specific ones */
     --background: #ffffff;
     --foreground: #0b0b0c;
     --card-bg: #ffffff;
-    /* light card */
     --card-border: #e5e7eb;
 }
 
@@ -12,9 +10,7 @@
     --background: #0b0b0c;
     --foreground: #e7e7ea;
     --card-bg: #111213;
-    /* dark card */
     --card-border: #1f2937;
-    /* gray-800 */
 }
 
 @theme inline {
@@ -25,7 +21,7 @@
 }
 
 
-/* Fallback for users relying on system dark mode without .dark class */
+/* dark mode- based on system*/
 
 @media (prefers-color-scheme: dark) {
      :root:not(.dark) {
@@ -40,4 +36,23 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
