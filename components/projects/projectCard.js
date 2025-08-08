@@ -1,45 +1,96 @@
 export default function ProjectCard({ title, description, link, demo, tech, relevance }) {
   return (
-    <div className="border p-4 rounded-lg shadow-md">
+    <div
+      className="rounded-xl border p-5 shadow-sm
+                 bg-[var(--card-bg)] border-[var(--card-border)]"
+    >
       <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="mt-2 text-gray-700">{description}</p>
 
-      <ul className="mt-2 flex gap-2 flex-wrap text-sm text-blue-600">
-        {tech.map((t, i) => (
-          <li key={i} className="bg-blue-50 px-2 py-1 rounded">{t}</li>
-        ))}
+      <p className="mt-2 opacity-90">{description}</p>
+
+      {/* tech chips are links now */}
+      <ul className="mt-3 flex gap-2 flex-wrap text-sm">
+        {tech.map((t, i) => {
+          const href = TECH_LINKS[t];
+          const chip = (
+            <span className="px-2 py-1 rounded
+                             bg-blue-50 text-blue-700/90
+                             dark:[--tw-bg-opacity:0.12] dark:bg-blue-500/10 dark:text-blue-300
+                             hover:underline underline-offset-2">
+              {t}
+            </span>
+          );
+          return (
+            <li key={i}>
+              {href ? (
+                <a href={href} target="_blank" rel="noreferrer" aria-label={`${t} docs`}>
+                  {chip}
+                </a>
+              ) : chip}
+            </li>
+          );
+        })}
       </ul>
 
-      {relevance && (
-        <p className="mt-2 text-sm text-gray-700 italic">{relevance}</p>
-      )}
+      {relevance && <p className="mt-2 text-sm italic opacity-80">{relevance}</p>}
 
-      <div className="flex gap-4 mt-4 items-center">
+      <div className="flex gap-4 mt-4 items-center flex-wrap">
         {link && (
           <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="px-4 py-2 bg-gray-100 rounded hover:bg-gray-200 text-sm transition"
-        >
-          View Code
-        </a>        
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 rounded-md border transition text-sm font-medium
+                       hover:bg-gray-100 dark:hover:bg-gray-800
+                       border-[var(--card-border)]"
+          >
+            View Code
+          </a>
         )}
-        {demo === "comingsoon" ? (
-          <span className="text-gray-400 italic">Demo coming soon</span>
+        {demo === 'comingsoon' ? (
+          <span className="italic opacity-70">Demo coming soon</span>
         ) : (
           demo && (
             <a
-            href={demo}
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 bg-blue-100 rounded hover:bg-blue-200 text-sm transition"
-          >
-            Watch Demo
-          </a>          
+              href={demo}
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 rounded-md border transition text-sm font-medium
+                         hover:bg-gray-100 dark:hover:bg-gray-800
+                         border-[var(--card-border)]"
+            >
+              Watch Demo
+            </a>
           )
         )}
       </div>
     </div>
   );
 }
+
+/*learn about the tech i used*/
+const TECH_LINKS = {
+  React: 'https://react.dev/learn',
+  Typescript: 'https://www.typescriptlang.org/docs/',
+  'Expensify API': 'https://docs.expensify.com/',
+  'Tailwind CSS': 'https://tailwindcss.com/docs',
+  OAuth: 'https://oauth.net/2/',
+  REST: 'https://restfulapi.net/',
+  Rust: 'https://doc.rust-lang.org/book/',
+  ReactJS: 'https://react.dev/learn',
+  WebSockets: 'https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API',
+  Redis: 'https://redis.io/docs/latest/',
+  'Property Testing': 'https://en.wikipedia.org/wiki/QuickCheck',
+  Flamegraph: 'https://www.brendangregg.com/flamegraphs.html',
+  'REST API': 'https://restfulapi.net/',
+  'OpenAI API': 'https://platform.openai.com/docs/overview',
+  'Node.js': 'https://nodejs.org/en/docs',
+  MongoDB: 'https://www.mongodb.com/docs/',
+  ESP32: 'https://docs.espressif.com/',
+  'C++': 'https://en.cppreference.com/w/',
+  MQTT: 'https://mqtt.org/',
+  'VEML7700 Sensor': 'https://www.vishay.com/docs/84286/veml7700.pdf',
+  Adafruit: 'https://learn.adafruit.com/',
+  PubSubClient: 'https://pubsubclient.knolleary.net/',
+  'Embedded Systems': 'https://interrupt.memfault.com/',
+};

@@ -36,12 +36,13 @@ const projects = [
 
 export default function ProjectList() {
   return (
-<div className="bg-gray-50 p-6 rounded-lg shadow-sm mt-10">
-  <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-  <div className="grid grid-cols-1 gap-6">
-    {projects.map((proj, i) => (
-      <ProjectCard key={i} {...proj} />
-    ))}
-  </div>
-</div>  )
+    <div className="p-6 rounded-lg shadow-sm bg-gray-50 dark:bg-transparent">
+      <h2 className="text-2xl font-semibold mb-6 opacity-90">Projects</h2>
+      <div className="grid grid-cols-1 gap-6">
+        {projects.map((proj, i) => (
+          <ProjectCard key={i} {...proj} />
+        ))}
+      </div>
+    </div>
+  )
 }
