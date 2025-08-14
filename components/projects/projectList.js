@@ -5,8 +5,8 @@ const projects = [
   {
     title: 'Finance Tracker Dashboard',
     description: 'A personal expense tracking dashboard built using the Expensify API. It fetches, categorizes, and visualizes transactions in real time, helping users simplify how they manage and reflect on their spending.',
-    link: '',
-    demo: 'comingsoon',
+    link: 'https://github.com/tdkayy/my-app',
+    demo: 'https://my-app-gctk.vercel.app',
     tech: ['React', 'Typescript', 'Expensify API', 'Tailwind CSS', 'OAuth', 'REST'],
     relevance: 'I built this project to explore how APIs can power simple yet meaningful financial workflows. It also reflects my belief that personal finance tools should be accessible, low-friction, and visually intuitive, principles I see mirrored in Expensify’s mission.',
   },

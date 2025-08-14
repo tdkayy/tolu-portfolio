@@ -72,7 +72,7 @@ export default function ProjectCard({ title, description, link, demo, tech, rele
                          hover:bg-gray-100 dark:hover:bg-gray-800
                          border-[var(--card-border)]"
             >
-              Watch Demo
+              Demo
             </a>
           )
         )}
