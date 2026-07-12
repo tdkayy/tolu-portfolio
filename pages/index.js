@@ -22,13 +22,10 @@ export default function Home() {
           </div>
           <h1 className="text-3xl font-bold">My Story</h1>
           <p className="leading-relaxed opacity-90 text-left">
-          My interest in tech comes from a deep, driven optimism, a belief that technology can help build a better world for the generations to come. This long-term vision has motivated me to take on a range of ambitious projects and learning opportunities. Whether I’m writing low-latency Rust for a trading engine, integrating financial APIs for smoother data flows, or automating physical systems with sensors and microcontrollers, my goal is always the same. To build with purpose.         
+          I am driven by an intense curiosity about how systems scale under pressure. Because I am actively bridging the gap between academic theory and commercial application, I focus heavily on the "why" and the "how" behind the architecture I design. How do we prevent race conditions during concurrent data execution? Will the next developer understand my code without needing a handover? These are the pragmatic questions that shape my approach to problem-solving.         
         <br />
         <br />
-        I see myself as an engineer who’s increasingly focused on the “why” behind the systems I build, not just the novelty of a “cool” project. What problem is this solving? Who is it for? Will the next developer understand my code without needing a handover? These are the questions that shape my thinking and influence how I design, structure, and document my work.          
-        <br />
-        <br />
-        I find myself gravitating toward projects that create long-term utility, clean APIs, real-time systems, infrastructure tools. That’s where I see the future of my contribution, whether it’s in fintech, IoT, or public sector innovation. I’m not here to build for the sake of building, I’m here to create systems that matter.
+        My goal is to develop robust, fault-tolerant infrastructure. I am actively seeking a rigorous, collaborative environment where I can immerse myself in scalable backend development, contribute to data-intensive systems, and continuously learn from a team of experienced specialists.        <br />
           </p>
         </div>
 
