@@ -20,7 +20,7 @@ export default function Home() {
               style={{ objectFit: 'cover' }}
             />
           </div>
-          <h1 className="text-3xl font-bold">My Story</h1>
+          <h1 className="text-3xl font-bold">about me</h1>
           <p className="leading-relaxed opacity-90 text-left">
           I am driven by an intense curiosity about how systems scale under pressure. Because I am actively bridging the gap between academic theory and commercial application, I focus heavily on the &quot;why&quot; and the &quot;how&quot; behind the architecture I design. How do we prevent race conditions during concurrent data execution? Will the next developer understand my code without needing a handover? These are the pragmatic questions that shape my approach to problem-solving.         
         <br />

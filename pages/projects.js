@@ -8,7 +8,7 @@ export default function Projects() {
     <>
       <Header />
       <main className="max-w-5xl mx-auto px-4 mt-12">
-      <h1 className="text-3xl font-bold text-center">about me</h1>
+      <h1 className="text-3xl font-bold text-center">more about me</h1>
         <p className="mt-3 text-lg opacity-90">
        i am a junior systems engineer who learns by building and making mistakes. i have been focusing on backend engineering, in the form of low latency architecture using Rust, delving into using and understanding event-driven APIs, optimizing memory constraints for embedded hardware etc. 
         </p>
